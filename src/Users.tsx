@@ -5,7 +5,7 @@ export const Users = () => {
     <div>
         <h1> Users - Hola Mundo 1 </h1>
         <nav>
-            <Link to="/user">usuario</Link>
+            <Link to="/user">Detalles de usuario</Link>
         </nav>
     </div>
   )
