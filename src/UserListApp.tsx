@@ -5,7 +5,7 @@ import { Users } from "./Users";
 function UserListApp() {
   
   return <div>
-      <h1>User List App</h1>
+      <h1 className="centerText">User List App</h1>
       <Routes>
         <Route path="/" element={<Users />} />
         <Route path="user" element={<UserDetails />} />
