@@ -8,13 +8,17 @@ export const Users = () => {
         <div className="headContainer">
           <h1> Usuarios </h1>
         </div>
+
         <div >
           <nav className="navContainer">
             <div className="searchContainer">
-              <button className="searchButton"><IonIcon name="search-outline"/></button>
-              <input className="searchInput" type="search" placeholder="Buscar usuarios"/>
+              
+                <button className="searchButton"><IonIcon name="search-outline"/></button>
+                 <input className="searchInput" type="search" placeholder="Buscar usuarios"/>
+ 
             </div>
-            <div>
+
+            <div className="linkContainer">
               <Link  to="/">
                 <button className="linkButton">Reputacion</button>
               </Link>
@@ -31,6 +35,7 @@ export const Users = () => {
                 <button className="linkButton">Moderadores</button>
               </Link>
             </div>
+
           </nav>
         </div>
 
