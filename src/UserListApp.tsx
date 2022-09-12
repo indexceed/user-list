@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { UserDetails } from "./UserDetails";
 import { Users } from "./Users";
 
