@@ -1,0 +1,219 @@
+:root{
+    background-color: #e4eaf9;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.centerText{
+    text-align: center;
+}
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgb(209, 209, 209);
+}
+
+@media (min-width: 300px) {
+    .mainContainer{
+        min-width: 300px;
+        height: auto;
+    }
+    .container{
+        min-width: 300px;
+        height: auto;
+    }
+    .headContainer{
+        text-align: center;
+        align-items: center;
+    }
+    .navContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchContainer{
+        width: 90%;
+    }
+    .linkContainer{
+        margin-top: 10px;
+        width: 90%;
+    }
+}
+@media (min-width: 600px) {
+    .mainContainer{
+        max-width: 600px;
+        height: auto;
+    }
+    .container{
+        max-width: 90%;
+        height: auto;
+    }
+    .headContainer{
+        text-align: center;
+        align-items: center;
+    }
+    .navContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchContainer{
+        width: 90%;
+    }
+    .linkContainer{
+        margin-top: 10px;
+        width: 90%;
+    }
+}
+@media (min-width: 720px) {
+    .mainContainer{
+        max-width: 720px;
+        height: auto;
+    }
+    .container{
+        max-width: 90%;
+        height: 460px;
+    }
+    .headContainer{
+        margin-top: 50px;
+        text-align: start;
+        align-items: center;
+    }
+    .navContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    .searchContainer{
+        width: 200px;
+    }
+    .linkContainer{
+        display: flex;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 1240px) {
+    .container{
+        min-width: 600px;
+        height: 460px;
+    }
+    .headContainer{
+        text-align: start;
+    }
+}
+
+.headContainer{
+    font-size: 0.8rem;
+}
+.searchContainer{
+    border: 1.5px solid rgb(200, 200, 200);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+}
+.searchButton{
+    border: none;
+    background-color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.searchInput{
+    font-size: 0.7rem;
+    border: none;
+    height: 28px;
+}
+input:focus{
+    outline: none;
+}
+.linkButton{
+    border: none;
+    height: 32px;
+    background-color: white;
+    font-size: 0.64rem;
+    font-weight:600;
+    border-radius: 5px;
+}
+.linkButton:hover{
+    background-color:#7da0ff ;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(57, 57, 57);
+}
+.tagContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tag{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 30px 6px 0px;
+    width: 180px;
+    height: 110px;
+    padding: 3px;
+}
+.tag:hover{
+    border: 1px solid #e4eaf9;
+    box-shadow: 2px 2px 2px #e4eaf9;
+    border-radius: 10px;
+}
+.imgContainer{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+img{
+    width: 70px;
+    height: 60px;
+    margin-left: -5px;
+}
+.userInfo{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.name{
+    font-weight: bold;
+    font-size: .88rem;
+}
+.adress{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 0.53rem;
+
+}
+.likes{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.like{
+    color: #7da0ff;
+    border: 1px solid #afafb0;
+    border-radius: 8px;
+    line-height: 10px;
+    margin: 1px;
+}
+.like span{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px 3px;
+    font-size: 0.6rem;
+    line-height: 13px;
+}
+
+
+

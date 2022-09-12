@@ -1,12 +1,16 @@
-import { Routes, Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export const UserDetails = () => {
   return (
-    <div>
-        <h1>UserDetails - Hola mundo 2</h1>
-        <nav>
-            <Link to="/">Usuarios</Link>
-        </nav>
+    <div className="mainContainer">
+      <div className="container">
+        <div className="headContainer">
+          <h1> Detalles de usuario </h1>
+          <Link  to="/">
+                <button className="linkButton">Volver a Usuarios</button>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }
