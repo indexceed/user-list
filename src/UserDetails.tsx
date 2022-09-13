@@ -64,7 +64,6 @@ export const UserDetails = () => {
           <Link  to="/">
                 <button className="linkButton">Volver a Usuarios</button>
           </Link>
-        
     </div>
   )
 }
