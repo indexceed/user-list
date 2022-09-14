@@ -1,5 +1,5 @@
 :root{
-    height: 100%;
+    height: auto;
     background: linear-gradient( #303030 50%, #e7e7e7 50%);
     margin: 0px;
     padding: 0px;
@@ -13,7 +13,7 @@
         flex-direction: column;
         justify-content: flex-start;  
         min-width: 300px;
-        height: 460px;
+        height: auto;
     }
     .infoSelectorContainer{
         display: grid;
@@ -27,7 +27,7 @@
         flex-direction: column;
         justify-content: flex-start;  
         min-width: 600px;
-        height: 460px;
+        height: auto;
     }
     .infoSelectorContainer{
         display: grid;
@@ -45,7 +45,7 @@
         flex-direction: column;
         justify-content: flex-start;  
         min-width: 720px;
-        height: 420px;
+        height: auto;
     }
     .infoSelectorContainer{
         display: flex;

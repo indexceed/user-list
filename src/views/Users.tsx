@@ -1,17 +1,24 @@
 import IonIcon from "@reacticons/ionicons";
 import { Link } from "react-router-dom";
 
-import { users } from "./data/userData";
-import { UserCard } from "./components/UserCard";
+import { getUserData } from "../api/user.api";
+import { User, UserCard } from "../components/UserCard";
 
-export const Users = () => {
+
+export const Users =  () => {
+
+    const {loading, users} = getUserData()
+
+    if(loading){
+      <h1>Loading...</h1>
+    }
+
   return (
     <div className="mainContainer">
       <div className="container">
         <div className="headContainer">
           <h1> Usuarios </h1>
         </div>
-
         <div>
           <nav className="navContainer">
             <div className="searchContainer">
@@ -28,15 +35,14 @@ export const Users = () => {
         </div>
 
         <div className="tagContainer">
-          {users.map((user) => {
+          {users.map((user:User) => {
             return (
-              <div key={user.name}>
+              <div key={user.id}>
                 <Link to="/user">
                   <UserCard
-                    picSRC={user.picSRC}
                     name={user.name}
                     adress={user.adress}
-                    likes={user.likes}
+                    website={user.website}
                   />
                 </Link>
               </div>

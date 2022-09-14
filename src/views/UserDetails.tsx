@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import IonIcon from "@reacticons/ionicons"
-import './userStyles.css'
+import '../userStyles.css'
 import { useState } from "react"
 
 export const UserDetails = () => {

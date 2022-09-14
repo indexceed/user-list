@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import { UserDetails } from "./UserDetails";
-import { Users } from "./Users";
+import { UserDetails } from "../views/UserDetails";
+import { Users } from "../views/Users";
 
 function UserListApp() {
   
