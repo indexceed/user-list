@@ -1,31 +1,43 @@
-export interface User {
-  picSRC: string,
-  name: string,
-  adress: string,
-  likes:string[],
+export interface Data {
+  id?: number;
+  name?: string;
+  username?: string;
+  email?: string;
+  address?: {
+    street?: string;
+    suite?: string;
+    city?: string;
+    zipcode?: string;
+    geo?: {
+      lat: string;
+      lng: string;
+    }
+  };
+  phone?: string;
+  website?: string;
+  company?: {
+    name: string;
+    catchPhrase: string;
+    bs: string;
+  };
 }
-export const UserCard = (user:User) => {
+export const UserCard = (data:Data) => {
   return (
       <div className="tag">
         <div className="imgContainer">
-          <img src={user.picSRC} alt="user" />
+          <img src="../public/userIcon.png" alt="user" />
         </div>
         <div className="userInfo">
           <div>
-            <span className="name">{user.name}</span>
+            <span className="name">{data.name}</span>
           </div>
           <div className="adress">
-            <span>{user.adress}</span>
+            <span>{data.address?.city}</span>
           </div>
           <div className="likes">
-            {user.likes.map((like) => {
-                return (
-                  <div className="like" key={like}>
-                    <span>{like}</span>
-                  </div>
-                )
-              })
-            }   
+              <div className="like">
+                <span>{data.website}</span>
+              </div>
           </div>
         </div>
       </div>
