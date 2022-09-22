@@ -2,14 +2,15 @@ import IonIcon from "@reacticons/ionicons";
 import { Link } from "react-router-dom";
 
 import { getUserData } from "../api/user.api";
-import { User, UserCard } from "../components/UserCard";
+import { Data, UserCard } from "../components/UserCard";
+import '../styles.css'
 
 
 export const Users =  () => {
 
-    const {loading, users} = getUserData()
+    const {loading, data} = getUserData(undefined)
 
-    if(loading){
+    if(loading || data === null){
       <h1>Loading...</h1>
     }
 
@@ -35,14 +36,18 @@ export const Users =  () => {
         </div>
 
         <div className="tagContainer">
-          {users.map((user:User) => {
+          {data!?.map((user:Data) => {
             return (
               <div key={user.id}>
-                <Link to="/user">
+                <Link to={`/user/${user.id}`} state={user}>
                   <UserCard
+                    id={user.id}
                     name={user.name}
-                    adress={user.adress}
+                    email={user.email}
+                    address={user.address}
+                    phone={user.phone}
                     website={user.website}
+                    username={user.username}
                   />
                 </Link>
               </div>

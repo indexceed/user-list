@@ -1,9 +1,9 @@
-export interface User {
+export interface Data {
   id?: number;
   name?: string;
   username?: string;
-  mail?: string;
-  adress?: {
+  email?: string;
+  address?: {
     street?: string;
     suite?: string;
     city?: string;
@@ -15,13 +15,13 @@ export interface User {
   };
   phone?: string;
   website?: string;
-  comany?: {
+  company?: {
     name: string;
     catchPhrase: string;
     bs: string;
   };
 }
-export const UserCard = (user:User) => {
+export const UserCard = (data:Data) => {
   return (
       <div className="tag">
         <div className="imgContainer">
@@ -29,14 +29,14 @@ export const UserCard = (user:User) => {
         </div>
         <div className="userInfo">
           <div>
-            <span className="name">{user.name}</span>
+            <span className="name">{data.name}</span>
           </div>
           <div className="adress">
-            <span>{user.adress?.city}</span>
+            <span>{data.address?.city}</span>
           </div>
           <div className="likes">
               <div className="like">
-                <span>{user.website}</span>
+                <span>{data.website}</span>
               </div>
           </div>
         </div>
