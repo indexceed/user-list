@@ -33,7 +33,7 @@ export const UserDetails = () => {
 
           <div className="userHeadContainer">
             <div className="userImgContainer">         
-              <img className="userImg" src="../public/userIcon.png" alt="userPic" />          
+              <img className="userImg" src="/userIcon.png" alt="userPic" />          
             </div>
           </div>
          
