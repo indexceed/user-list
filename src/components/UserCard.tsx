@@ -25,7 +25,7 @@ export const UserCard = (data:Data) => {
   return (
       <div className="tag">
         <div className="imgContainer">
-          <img src="../public/userIcon.png" alt="user" />
+          <img src="userIcon.png" alt="user" />
         </div>
         <div className="userInfo">
           <div>
